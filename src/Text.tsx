@@ -1,10 +1,21 @@
 import React from "react";
 
-const Text: React.FC = ({ children }) => {
+interface TextProps{
+    readonly color:string;
+}
+
+const Text: React.FC<TextProps> = ({ children, color }) => {
     //FC는 Function Componet즉 함수형
     return (
         <>
-            <p></p>
+            <p
+                style={{
+                    fontWeight: "bold",
+                    color: "blue",
+                }}
+            >
+                {children}
+            </p>
         </>
     );
 };
