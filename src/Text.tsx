@@ -11,10 +11,11 @@ const Text: React.FC<TextProps> = ({ children, color }) => {
             <p
                 style={{
                     fontWeight: "bold",
-                    color: "blue",
+                    color,
                 }}
+                //key와 vlaue가 같으므로 color로 표시(원래는 color: color)
             >
-                {children}
+                글자 : {children}
             </p>
         </>
     );

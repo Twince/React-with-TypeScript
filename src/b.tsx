@@ -1,9 +1,10 @@
 import React from 'react';
+import Text from './Text';
 
 const B: React.FC = () => {
     return(
         <>
-            <p>B!</p>
+            <Text color="red">B!</Text>
         </>
     )
 }
